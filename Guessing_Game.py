@@ -8,7 +8,7 @@ def game():
 
     turns = t
 
-    print("\nYou have 5 tries to guess the number\n",number)
+    print("\nYou have "+str(t)+" tries to guess the number\n")
 
     while True:
         
@@ -28,13 +28,14 @@ def game():
 
         if turns == 1:
             print("oh no you lost the game ")
+            print("the number was: ",number)
             break
 
         turns -= 1
 
         print("\nNumber of turns left are ",turns,"\n")
 
-    if input("Enter y to paly again: ") in "Yy":
+    if input("Enter y to play again: ") in "Yy":
         game()
 
 game()
