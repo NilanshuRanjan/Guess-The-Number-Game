@@ -34,7 +34,7 @@ def game():
 
         print("\nNumber of turns left are ",turns,"\n")
 
-    if input("Enter y to paly again: ") in "Yy":
+    if input("Enter y to play again: ") in "Yy":
         game()
 
 game()
