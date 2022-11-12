@@ -1,14 +1,14 @@
 def game():
     import random
 
-    n = int(input("Enter max range of the number"))
+    n = int(input("\nEnter max range of the number"))
     t = int(input("Enter number of turns"))
 
     number = random.randint(1,n)
 
     turns = t
 
-    print("\nYou have 5 tries to guess the number\n",number)
+    print("\nYou have ",turns," tries to guess the number\n")
 
     while True:
         
@@ -27,7 +27,7 @@ def game():
                 break
 
         if turns == 1:
-            print("oh no you lost the game ")
+            print("\noh no you lost the game\n")
             break
 
         turns -= 1
